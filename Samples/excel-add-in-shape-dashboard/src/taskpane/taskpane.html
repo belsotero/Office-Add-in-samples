@@ -1,5 +1,3 @@
-<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
-
 <!DOCTYPE html>
 <html>
 
@@ -7,49 +5,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shape Dashboard</title>
+    <title>Dashboard de Formas</title>
 
-    <!-- Office JavaScript API -->
     <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
 
-    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
     <link rel="stylesheet"
         href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
 
-    <!-- Template styles -->
     <link href="taskpane.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="ms-font-m ms-welcome ms-Fabric ms-bgColor-neutralLighter">
     <header class="ms-welcome__header ms-bgColor-neutralLighter">
-        <img width="90" height="90" src="../../assets/logo-filled.png" alt="Contoso" title="Contoso" />
-        <p class="sampleTitle">Shape dashboard</p>
+        <img width="90" height="90" src="../../assets/logo-filled.png" alt="Logotipo" title="Logotipo" />
+        <p class="sampleTitle">Painel de Formas</p>
     </header>
+
     <section class="ms-welcome__main">
-        <p class="sampleDescription">This sample add-in shows how to use shapes to build a dashboard in Excel.</p>
-    </section>
-    <div id="status"></div>
-    <section class="samples ms-font-m" contentType="text/html; charset=UTF-8">
-        <p class="sampleSubTitle">Add sample data</p>
-        <button id="add-sample-data" class="ms-Button">
-            <span class="ms-Button-label">Add sample data</span>
-        </button>
-        <p class="sampleSubTitle">Create and format the dashboard</p>
-        <button id="create-dash-board" class="ms-Button">
-            <span class="ms-Button-label">Create empty dashboard</span>
-        </button>
-        <button id="add-information" class="ms-Button">
-            <span class="ms-Button-label">Add information to dashboard</span>
-        </button>
-        <button id="change-format" class="ms-Button">
-            <span class="ms-Button-label">Change information format</span>
-        </button>
-        <p class="sampleSubTitle">While a cell outside the dashboard is selected, click the button to add onActivated/onDeactivated event handlers to the dashboard. Then click any shape on the dashboard and the type of information displayed changes. Then click any cell outside the dashboard and the information changes back. </p>
-        <button id="add-event-handler" class="ms-Button">
-            <span class="ms-Button-label">Add Event Handlers</span>
-        </button>
+        <p class="sampleDescription">Este suplemento demonstra como utilizar formas geométricas para construir
+            dashboards inteligentes no Excel.</p>
     </section>
 
+    <div id="status"></div>
+
+    <section class="samples ms-font-m">
+        <p class="sampleSubTitle">1. Preparar dados</p>
+        <button id="add-sample-data" class="ms-Button">
+            <span class="ms-Button-label">Inserir dados de exemplo</span>
+        </button>
+
+        <p class="sampleSubTitle">2. Configurar o Dashboard</p>
+        <button id="create-dash-board" class="ms-Button">
+            <span class="ms-Button-label">Criar dashboard vazio</span>
+        </button>
+        <button id="add-information" class="ms-Button">
+            <span class="ms-Button-label">Adicionar informações</span>
+        </button>
+        <button id="change-format" class="ms-Button">
+            <span class="ms-Button-label">Alterar formatação</span>
+        </button>
+
+        <p class="sampleSubTitle">3. Interatividade</p>
+        <p class="ms-font-s">Selecione uma célula fora do dashboard e clique no botão abaixo para ativar os monitores de
+            eventos. Ao clicar nas formas do painel, os dados serão alternados automaticamente.</p>
+        <button id="add-event-handler" class="ms-Button">
+            <span class="ms-Button-label">Ativar Monitoramento</span>
+        </button>
+    </section>
 </body>
 
 </html>
